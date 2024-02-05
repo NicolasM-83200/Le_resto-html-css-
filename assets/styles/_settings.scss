@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "allura";
+  src: url(../fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins";
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Light.ttf);
+}
+$font1: allura, cursive;
+$font2: poppins, serif;
+$font3: roboto, serif;
+$black: #21201e;
+$white: #eee;
+$grey: #b6b6b6;
+$color1: #a67245;
+
+@mixin childCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin alignChildren($space) {
+  display: flex;
+  align-items: center;
+  justify-content: $space;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li,
+a,
+a:visited {
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  text-align: center;
+  font-family: $font3;
+  background: $black;
+}
